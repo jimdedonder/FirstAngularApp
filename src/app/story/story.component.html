@@ -1,0 +1,33 @@
+<!--<div>
+  <h3>{{title}}</h3>
+  <div>
+    2 Way Binding
+    <input [(ngModel)]="story.name">
+  </div>
+  <p>{{story.name}}</p>
+  <div>
+    1 Way Binding
+    <input [value]="story.name">
+  </div>
+</div>
+
+<ul>
+  <li *ngFor="let story of stories">
+    {{story.name}}
+  </li>
+</ul>
+<div *ngIf="stories.length">
+  <h3>You have {{stories.length}} stories</h3>
+</div>
+
+event sample
+<input (keyup)="onKey($event)">
+<p>{{values}}</p>
+template reference variable (with enter) : 
+<input #box (keyup.enter)="onKey2(box.value)" (blur)="onKey2(box.value)">
+<p>{{box.value}}</p>
+<p>{{values2}}</p>-->
+
+<!--<story-app>Loading ...</story-app>-->
+
+<hero-form *ngIf="isActive">Loading ...</hero-form>
